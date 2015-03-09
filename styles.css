@@ -2,16 +2,28 @@
 
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
+html { 
+  background: url(assets/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-
-.gameboard {
+.board {
   position: relative;
   height: 500px;
-  width: 750px;
-  border: solid thin gray;
-  padding: 25px;
-  background-image: url('space.png');
+  width: 500px;
+  /*border: solid thin gray;*/
+  /*padding: 25px;*/
+  background-image: url('assets/board.svg');
   margin: 0 auto 0 auto;
+}
+
+.shadow {
+  -moz-box-shadow:    5px 5px 12px 0px #363737;
+  -webkit-box-shadow: 5px 5px 12px 0px #363737;
+  box-shadow:         5px 5px 12px 0px #363737;
 }
 
 .asteroid {
