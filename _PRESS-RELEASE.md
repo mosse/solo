@@ -1,7 +1,7 @@
 # Project Name #
 
 <!-- 
-> This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
+> This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterity's sake.
 
 There is an approach called "working backwards" that is widely used at Amazon. They work backwards from the customer, rather than starting with an idea for a product and trying to bolt customers onto it. While working backwards can be applied to any specific product decision, using this approach is especially important when developing new products or features.
 
@@ -17,28 +17,30 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  Chess Meets World!
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  An chess-app for site owners who want to take on The World at Chess.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  Chess Meets World is a light-weight embeddable app that can be added to any site or blog. Once installed, a blogger can begin playing a chess game against the collaborative efforts of visitors to their site (The World). In addition, visitors can submit an email address to keep up to date with the progress of the game.  
 
 ## Problem ##
-  > Describe the problem your product solves.
+  Many personal sites and blogs provide a wealth of great content and information for readers, but individual bloggers can find it difficult to engage with the anonymous visitors beyond the odd comment. Furthermore, current trends in email collection can be off-putting and 'spammy'. Chess Meets World addresses these issues with a fun, friendly approach.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  When visiting a site with Chess Meets World installed, a visitor can click an unobtrusive floating ribbon that opens an overlay with the current state of the chess game displayed. If it is The World's turn, the visitor can play a valid chess move, and optionally sign up to receive an email update once the site owner has played their next turn. The site owner can then access a database of people that have engaged in the game.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "Chess Meets World bridges the gap between refreshing Google Analytics and starting a conversation with your readers." - Mark Macdonald
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Installing Chess Meets World is as easy as signing up for an account, and installing one line of Javascript on your site.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "Chess Meets World is so fun! I get emails from around the world whenever I leave it too long to play my next move. Such a great way of seeing who the faces behind the visits really are.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Sign up and have Chess Meets World running on your site in five minutes!
+
+  www.chessmeetsworld.com
