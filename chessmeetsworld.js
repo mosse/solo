@@ -7,6 +7,13 @@ var init = function() {
     pgnEl = $('#pgn');
     myFirebaseRef = new Firebase('https://intense-fire-2841.firebaseio.com/');
 
+  // check Firebase for previously stored board status
+  myFirebaseRef.limitToLast(1).on("value", function(snapshot) {
+    console.log(snapshot.val());
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  });
+
   // do not pick up pieces if the game is over
   // only pick up pieces for the side to move
   var onDragStart = function(source, piece, position, orientation) {
@@ -73,15 +80,8 @@ var init = function() {
 
   var onChange = function(oldPos, newPos) {
     console.log("Position changed: ", game.fen());
-    myFirebaseRef.set({
-      title: "Hello World!",
-      fen: game.fen(),
-      author: "Firebase",
-      location: {
-        city: "San Francisco",
-        state: "California",
-        zip: 94103
-      }
+    myFirebaseRef.push({
+      fen: game.fen()
     }); 
   };
 
