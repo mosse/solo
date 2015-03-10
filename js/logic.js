@@ -1,11 +1,8 @@
-var board,
-  game = new Chess(),
-  statusEl = $('#status'),
-  fenEl = $('#fen'),
-  pgnEl = $('#pgn');
-
 // do not pick up pieces if the game is over
 // only pick up pieces for the side to move
+
+var game = new Chess();
+
 var onDragStart = function(source, piece, position, orientation) {
   if (game.game_over() === true ||
       (game.turn() === 'w' && piece.search(/^b/) !== -1) ||
@@ -31,7 +28,6 @@ var onDrop = function(source, target) {
 // update the board position after the piece snap 
 // for castling, en passant, pawn promotion
 var onSnapEnd = function() {
-  console.log(board);
   board.position(game.fen());
 };
 
@@ -68,17 +64,13 @@ var updateStatus = function() {
   pgnEl.html(game.pgn());
 };
 
-var params = {
+var cfg = {
   draggable: true,
-  dropOffBoard: 'snapback',
   position: 'start',
-  showNotation: false,
   onDragStart: onDragStart,
   onDrop: onDrop,
   onSnapEnd: onSnapEnd
+};
+board = new ChessBoard('board', cfg);
 
-}
-
-var board = new ChessBoard('board', params);
-
-// $(document).ready(init);
+updateStatus();
