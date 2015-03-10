@@ -9,6 +9,8 @@ var init = function() {
     myFirebaseRef = new Firebase('https://intense-fire-2841.firebaseio.com/'),
     startPos;
 
+  var ruyLopez = 'r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R';
+
   // check Firebase for previously stored board status
   myFirebaseRef.limitToLast(1).on("value", function(snapshot) {
     startPos = (snapshot.val().fen);
