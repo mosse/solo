@@ -38,13 +38,25 @@ input {
 
 .record{
   text-align: center;
-  padding: 2px;
+  margin-top: 5px;
+  padding: 5px;
 }
 
 .message{
   text-align: center;
   font-size: 2.5em;
-  padding: 5px;
+  padding: 10px;
+}
+
+#chessTab{
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 130px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: rgba(40,40,40,0.92);
 }
 
 

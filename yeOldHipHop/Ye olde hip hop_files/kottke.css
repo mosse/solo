@@ -1,0 +1,1196 @@
+/* general style */
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	text-align: left;
+	color: #000000;
+}
+
+A:link, A:active, A:hover {
+	color: #00759d;
+	text-decoration: none;
+}
+
+A:visited {
+	color: #006789;
+	text-decoration: none;
+}
+
+A:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+p A:link, p A:active {
+	color: #00759d;
+	border-bottom: dotted #bbbbbb 1px;
+}
+
+p A:visited {
+	color: #006789;
+	border-bottom: dotted #cccccc 1px;
+}
+
+p A:hover {
+	color: #000000;
+	border-bottom: dotted #cccccc 1px;
+}
+
+blockquote {
+	font-size: 15px;
+	line-height: 25px;
+	color: #333333;
+	padding-left: 26px;
+	padding-right: 26px;
+	margin: 0 0 18px 0;
+}
+
+
+/* miscell. styles */
+
+h1 {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	line-height: 42px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0 0 15px 0;
+	text-align: left;
+}
+
+h2 {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0 0 9px 0;
+	text-align: left;
+}
+
+h2 .smaller {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	font-weight: 400;
+	color: #aaaaaa;
+}
+
+h3 {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	text-transform: none;
+	text-align: left;
+	color: #000000;
+	text-decoration: none;
+	border-width: 0;
+	margin: 30px 0 12px 0;
+	padding: 0;
+}
+
+.dim {
+	color: #cccccc;
+}
+
+.dimless {
+	color: #999999;
+	font-size: 15px;
+}
+
+.dimsmaller {
+	color: #999999;
+	font-size: 15px;
+}
+
+.smaller {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.evensmaller {
+	font-size: 13px;
+	line-height: 22px;
+}
+
+sup {
+	font-size: 9px;
+	line-height: 0px;
+	position : relative;
+	top: -3px;
+	font-weight: 600;
+}
+
+sup A:link {
+	color: #000000;
+	background-color: #e0e0e0;
+	padding: 1px 4px 1px 5px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-bottom: none;
+}
+
+
+/* main structure */
+
+#easel {
+	width: 950px;
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+}
+
+#canvas {
+	float: left;
+	width: 890px;
+	margin: 50px 30px 0 30px;
+	padding: 0;
+	text-align: center;
+}
+
+#main {
+	float: left;
+	width: 640px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#side {
+	float: right;
+	width: 160px;
+	margin: 0 30px 0 0;	
+	padding: 0;
+	text-align: left;
+}
+
+#single {
+	width: 640px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+
+/* miscell. structure */
+
+.brush {
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+
+/* top bar */
+
+.tb {
+	display: block;
+	background-color: #01d4ff;
+}
+
+.tb A:link, .tb A:visited, .tb A:active, .tb A:hover {
+	border: 0;
+	outline: 0;
+	height: 15px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+
+/* sidebar */
+
+#side h4 {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 0;
+	margin: 36px 0 8px 0;
+	text-transform: uppercase;
+}
+
+#side h4:first-child {
+	margin-top: 0;
+}
+
+#side .sidenav {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+#side p {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000000;	
+	margin: 0 0 12px 0;
+	padding: 0;
+}
+
+#side A:link, #side A:active, #side A:visited, #side A:hover {
+	color: #000000;
+	border-bottom: none;
+}
+
+
+/* sidebar icons */
+
+.sb-icon-fb, .sb-icon-tw, .sb-icon-rss, .sb-icon-tum {
+	font-size: 12px!important;
+	line-height: 18px!important;
+	display: block;
+}
+
+.sb-icon-fb A:link, .sb-icon-fb A:visited, .sb-icon-fb A:active, .sb-icon-fb A:hover {
+	border: 0;
+	outline: 0;
+	background-image:url('http://kottke.org/images/side/facebook.png');
+	background-repeat:no-repeat;
+	background-position: 0 1px;
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400!important;
+	text-decoration: none;
+	display: block;
+	padding: 0 0 0 42px;
+}
+
+.sb-icon-tw A:link, .sb-icon-tw A:visited, .sb-icon-tw A:active, .sb-icon-tw A:hover {
+	border: 0;
+	outline: 0;
+	background-image:url('http://kottke.org/images/side/twitter.png');
+	background-repeat:no-repeat;
+	background-position: 0 1px;
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400!important;
+	text-decoration: none;
+	display: block;
+	padding: 0 0 0 42px;
+}
+
+.sb-icon-rss A:link, .sb-icon-rss A:visited, .sb-icon-rss A:active, .sb-icon-rss A:hover {
+	border: 0;
+	outline: 0;
+	background-image:url('http://kottke.org/images/side/rss.png');
+	background-repeat:no-repeat;
+	background-position: 0 1px;
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400!important;
+	text-decoration: none;
+	display: block;
+	padding: 0 0 0 42px;
+}
+
+.sb-icon-tum A:link, .sb-icon-tum A:visited, .sb-icon-tum A:active, .sb-icon-tum A:hover {
+	border: 0;
+	outline: 0;
+	background-image:url('http://kottke.org/images/side/tumblr.png');
+	background-repeat:no-repeat;
+	background-position: 0 1px;
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400!important;
+	text-decoration: none;
+	display: block;
+	padding: 0 0 0 42px;
+}
+
+
+/* front page posts */
+
+#updates {
+	display: none;
+	padding: 8px 12px 6px 14px;
+	margin: 0 0 24px 0;
+	background-color: #e2f9ff;
+}
+
+#updates A:link, #updates A:active, #updates A:visited {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #000000;
+	border-bottom: dotted #cccccc 1px;
+	font-weight: 500;
+}
+
+#updates A:hover {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #000000;
+	border-bottom: dotted #cccccc 1px;
+	font-weight: 500;
+}
+
+.post {
+	padding: 0;
+	margin: 0 0 60px 0;
+	clear: both;
+}
+
+.post .callout {
+	background-color: #ffffaa;
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: rgba(0,0,0,0.66);
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	padding: 0 5px 0 5px;
+	display: inline-block;
+	-moz-box-shadow:    0 0 4px 4px #ffffaa;
+	-webkit-box-shadow: 0 0 4px 4px #ffffaa;
+	box-shadow:         0 0 4px 4px #ffffaa;
+
+}
+
+.post .callout A:link, .post .callout A:visited, .post .callout A:active {
+	text-decoration: none!important;
+	border-width: 0!important;
+	color: rgba(0,0,0,0.66);
+}
+
+.post .callout A:hover {
+	text-decoration: none!important;
+	border-width: 0!important;
+	color: rgba(0,0,0,1);
+}
+
+.post h2 {
+	text-decoration: none;
+	border-width: 0;
+}
+
+.post h2 A:link, .post h2 A:visited, .post h2 A:active, .post h2 A:hover {
+	color: #000000!important;
+	text-decoration: none!important;
+	border-width: 0!important;
+}
+
+.post .date {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #aaaaaa;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	white-space:nowrap;
+}
+
+.post ol {
+	padding-left: 0px;
+	list-style-position: inside;
+}
+
+.post ol li {
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.like-butt {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	width: 100px;
+	/* and I cannot lie */
+}
+
+.meta {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+	opacity: 0.70;
+}
+
+.meta:hover {
+	opacity: 1.00;
+}
+
+
+/* movies - front page */
+
+.movierfpp {
+	float: right;
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	margin: 4px 0 1px 15px;
+}
+
+.post .moviershortt {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	text-decoration: none;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.post .moviershortt A:link, .post .moviershortt A:active {
+	color: #00759d;
+/*	border-bottom: dotted #cccccc 1px; */
+}
+
+.post .moviershortt A:visited {
+	color: #006789;
+/*	border-bottom: dotted #cccccc 1px; */
+}
+
+.post .moviershortt A:hover {
+	color: #00759d;
+	border-bottom: dotted #cccccc 1px;
+}
+
+
+/* movies - archive pages */
+
+.moviet {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+.review {
+	color: #aaaaaa;
+}
+
+.review A:link, .review A:visited, .review A:active, .review A:hover {
+	color: #aaaaaa!important;
+	text-decoration: none!important;
+	border-width: 0!important;
+}
+
+.hrmovie {
+	height: 1px;
+	font-size: 1px;
+	line-height: 1px;
+	width: 100%;
+	background-color: #f0f0f0;
+	padding: 0;
+	margin: 0 0 12px 0;
+}
+
+
+/* books front page */
+
+.bordr {
+	margin: 4px 16px 16px 0;
+	padding: 3px;
+	width: 64px;
+	float: left;
+	background-color: #ffffff;
+	border: solid 1px #cccccc;
+}
+
+.bordr .thumb {
+position: relative;
+	height: 64px;
+	width: 64px;
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.thumb img {
+	position: relative;
+	top: -38px;
+	left: -23px;
+}
+
+.author {
+	color: #666666;
+}
+
+
+/* individual posts */
+
+.tags-indiv-title {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	font-weight: 600;
+	color: #666666;
+	margin: 36px 0 7px 0;
+}
+
+.tags-indiv {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 33px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.tags-indiv A:link, .tags-indiv A:active, .tags-indiv A:visited {
+	color: #444444;
+	text-decoration: none;
+	white-space:nowrap;
+	margin: 0 6px 0 0;
+	padding: 4px 9px 4px 9px;
+	background-color: #f2fdff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: solid 1px #e1eff2;
+}
+
+.tags-indiv A:hover {
+	color: #111111;
+	text-decoration: none;
+	white-space:nowrap;
+	margin: 0 6px 0 0;
+	padding: 4px 9px 4px 9px;
+	background-color: #e5fbff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: solid 1px #cfe1e5;
+}
+
+.movierindiv {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	margin: 4px 0 1px 8px;
+}
+
+
+/* quick links */
+
+.quicklinks-post {
+	color: #000000;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.quicklinks-post p {
+	margin: 10px 0 25px 0;
+	padding: 0;
+}
+
+.quicklinks-post A {
+	text-decoration: none!important;
+	border-width: 0!important;
+	font-weight: 500;
+}
+
+.quicklinks-post A:link {
+	color: #000000;
+}
+
+.quicklinks-post A:hover {
+	color: #00759d;
+}
+
+.quicklinks-post A:visited {
+	color: #777777;
+}
+
+.quicklinks-post A:active {
+	color: #000000;
+}
+
+.quicklinks-lead {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #cc0000;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	white-space:nowrap;
+}
+
+
+/* comments */
+
+.comment {
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+.comment h4 {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+.comment h4 A:link, .comment h4 A:visited, .comment h4 A:active, .comment h4 A:hover {
+	font-size: 13px;
+	color: #aaaaaa;
+	padding: 0;
+	margin: 0 0 0 12px;
+	text-decoration: none;
+}
+
+.comment h4 .author, .comment h4 .author A:link, .comment h4 .author A:visited, .comment h4 .author A:active, .comment h4 .author A:hover {
+	font-size: 16px;
+	color: #000000;
+	margin: 0;
+	text-decoration: none;
+}
+
+/* comment form */
+
+#commentform {
+	padding: 0;
+	margin: 36px 0 0 0;
+}
+
+#commentform h5 {
+	font-family: 'Whitney SSm 5r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0 0 2px 0;
+}
+
+#commentform h6 {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+#commentform textarea {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	padding: 6px;
+	margin: 8px 0 8px 0;
+	width: 640px;
+	height: 210px;
+	border: 1px solid #999999;
+}
+
+#commentform .remember {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+#commentform .row {
+	margin: 0 0 8px 0;
+	padding: 0;
+	clear:left;
+}
+
+#commentform .label {
+	width: 50px;
+}
+
+#commentform .label .dimmer {
+	color: #aaaaaa;
+}
+
+#commentform .row input {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	width: 300px;
+	padding: 3px;
+	margin: 0;
+	border: 1px solid #999999;
+}
+
+#commentform #subbut {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	background-color: #ffffff;
+	color: #000000;
+	width: 208px;
+	padding: 4px 0;
+	margin: 0;
+	border: 2px solid #000000;
+}
+
+.helpful
+{
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 400;
+	padding: 0;
+	margin: 30px 0 18px 0;
+}
+
+
+/* general forms */
+
+
+.inputbox {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	width: 200px;
+	padding: 3px;
+	margin: 0;
+	border: 1px solid #999999;
+}
+
+.button {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 4px 16px;
+	margin: 0;
+	border: 2px solid #000000;
+}
+
+
+
+/* ad styles */
+
+#thedeck {
+	color: #000000;
+	text-align: left;
+	margin: 0 0 14px 0;
+}
+
+#thedeck p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 10px 0 0;
+}
+
+#thedeck p A:link, #thedeck p A:active, #thedeck p A:visited, #thedeck p A:hover {
+	color: #000000;
+	border-bottom: none;
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+
+#generic-ad {
+	color: #000000;
+	text-align: left;
+	margin: 0 0 14px 0;
+}
+
+#generic-ad p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 10px 0 0;
+}
+
+#generic-ad p A:link, #generic-ad p A:active, #generic-ad p A:visited, #generic-ad p A:hover {
+	color: #000000;
+	border-bottom: none;
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+
+.job {
+	font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	margin: 0 0 14px 0;
+	padding: 0;
+}
+
+.job A:link, .job A:active, .job A:visited, .job A:hover {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #000000;
+	border-bottom: none;
+	font-weight: 600;
+}
+
+.job ul {
+	
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0;
+	list-style-type: none;
+	
+}
+
+.job li {
+	padding: 5px 0 3px 0;
+	border-top: 1px solid #e6e6e6;
+	
+}
+
+.job li:first-child {
+	padding: 0 0 3px 0;
+	border-top: none;
+}
+
+
+.adsp {
+	font-size: 10px!important;
+	color: #777777!important;
+	margin-top: -5px!important;
+}
+
+.adsp A:link, .adsp A:active, .adsp A:visited, .adsp A:hover {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #555555!important;
+	border-bottom: none!important;
+	font-weight: 600!important;
+}
+
+
+/* boosts */
+
+#boost-side {
+	float: right;
+	width: 160px;
+	margin: 0 30px 0 0;	
+	padding: 0;
+	text-align: left;
+}
+
+#boost-side p.full {
+	font-size: 13px;
+	line-height: 20px;
+	margin-right: -30px;
+}
+
+a.cal_week {
+	height: 36px;
+	color: #000000;
+	background-color: #f0f0f0;
+	padding: 6px 32px 12px 12px;
+	margin: 0 10px 10px 0;
+	float: left;
+	display: block;
+	width: 160px;
+	position: relative;
+}
+
+a.cal_week:last-of-type {
+	margin-bottom: 20px;
+}
+
+a.cal_week.booked {
+	font-weight: 400;
+	color: #999999;
+	background-color: #f6f6f6;
+}
+
+a.cal_week span:nth-child(1) {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 700;
+	font-variant:small-caps;
+	color: #666666;
+}
+
+a.cal_week.booked span:nth-child(1) {
+	color: #999999;
+}
+
+a.cal_week span:nth-child(2) {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	position: absolute;
+	padding: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 140px;
+	text-overflow: ellipsis;
+}
+
+a.cal_week.booked:hover {
+	cursor: default;
+}
+
+a.cal_week.booked:hover span:nth-child(2) {
+	color: #999999;
+}
+
+a.cal_week span:nth-child(3) {
+	position: absolute;
+	font-size: 18px;
+	font-weight: 400;
+	color:#f38b31;
+	margin-top: -6px;
+	margin-left: 160px;
+}
+
+a.cal_week.booked span:nth-child(3) {
+	font-size: 20px;
+	color: #cccccc;
+	margin-left: 160px;
+}
+
+a.boost-button {
+	font-size:15px;
+	line-height:22px;
+	font-weight: 600;
+	background: #f38b31;
+	color: #ffffff;
+	padding: 10px 18px 10px 18px;
+	margin: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	display: block;
+	float: left;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	text-align: center;
+	cursor: pointer;
+}
+
+a.boost-button.off {
+	opacity:0.4;
+	pointer-events: none;
+}
+
+a.boost-button:hover {
+	background: #f38b31;
+	color: #ffffff;
+	cursor: pointer;
+	border: none;
+}
+
+.sponsor-lead {
+	font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #f38b31;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	white-space:nowrap;
+}
+
+.sponsor-meta {
+	color: #f38b31;
+}
+
+
+/* for the iPhone and other small screened devices */
+
+@media screen and (max-device-width: 480px) {
+
+	body {
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+	#canvas {
+		margin: 50px 30px 0 40px;
+	}
+
+	#side {
+		width: 180px;
+		margin: 0 20px 0 0;	
+	}
+
+	.tb A:link, .tb A:visited, .tb A:active, .tb A:hover {
+		height: 20px;
+	}
+
+	p {
+		margin: 0 0 24px 0;
+		padding: 0;
+	}
+
+	.meta {
+		opacity: 1.00;
+	}
+
+	blockquote {
+		font-size: 18px;
+		line-height: 28px;
+		padding-left: 26px;
+		padding-right: 26px;
+		margin: 0 0 24px 0;
+	}
+
+	.post .date {
+		font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 22px;
+		font-weight: 600;
+		color: #aaaaaa;
+		padding: 0;
+		margin: 0 0 0 16px;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 44px;
+		margin: 0 0 18px 0;
+	}
+
+	h3 {
+		font-size: 26px;
+		line-height: 32px;
+		margin: 30px 0 12px 0;
+	}
+
+	#side .sidenav {
+		line-height: 36px;
+	}
+
+	#side h4 {
+		font-family: 'Whitney SSm 6r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 18px;
+		line-height: normal;
+		font-weight: 600;
+		letter-spacing: 1px;
+		padding: 0;
+		margin: 40px 0 10px 0;
+		text-transform: uppercase;
+	}
+
+	#side h4:first-child {
+		margin-top: 10px;
+		margin-bottom: 6px;
+	}
+
+	#side p {
+		font-family: 'Whitney SSm 4r','Whitney SSm A','Whitney SSm B','Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		line-height: 32px;
+		font-weight: 400;
+		color: #000000;	
+		margin: 0 0 18px 0;
+		padding: 0;
+	}
+
+	.sb-icon-fb, .sb-icon-tw, .sb-icon-rss, .sb-icon-tum {
+		font-size: 16px!important;
+		line-height: 22px!important;
+		display: block;
+	}
+
+	.tags-indiv-title {
+		font-size: 20px;
+		margin: 42px 0 10px 0;
+	}
+
+	.tags-indiv {
+		font-size: 18px;
+		line-height: 40px;
+	}
+
+	.tags-indiv A:link, .tags-indiv A:active {
+		margin: 0 6px 0 0;
+		padding: 5px 11px 5px 11px;
+		background-color: #f2fdff;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		border: solid 1px #e1eff2;
+	}
+
+	#thedeck p {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 10px 10px 0 0;
+	}
+
+	#generic-ad p {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 10px 10px 0 0;
+	}
+
+	.job {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0 0 14px 0;
+	}
+
+	.job ul {
+		font-size: 18px;
+		line-height: 24px;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	.adsp {
+		font-size: 14px!important;
+		line-height: 20px!important;
+		margin-top: -5px!important;
+	}
+
+}
+
+#chessTab{
+  position: fixed;
+  z-index: 1;
+  right: -55px;
+  top: 200px;
+  width: 140px;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: rgba(40,40,40,0.92);
+}
+
+/*a:link a:visited a:hover #chessTab { 
+	color: #xxxxxx; 
+	text-decoration: none; 
+}*/
+.ie8 *, .ie7 *, .ie6 * {
+	font-weight: normal !important;
+	font-style: normal !important;
+}
