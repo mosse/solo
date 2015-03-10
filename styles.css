@@ -16,22 +16,18 @@ html {
   width: 556px;
   height: 700px;
   margin: 0 auto 0 auto;
-}
-
-.board {
-  position: relative;
-  height: 500px;
-  width: 500px;
-  border: solid thin gray;
-  /*padding: 25px;*/
-  background-image: url('assets/board.svg');
-  margin: 0 auto 0 auto;
-}
-
-.board-b72b1 {
   -moz-box-shadow:    5px 5px 12px 0px #363737;
   -webkit-box-shadow: 5px 5px 12px 0px #363737;
   box-shadow:         5px 5px 12px 0px #363737;
+  background-color: rgba(64,64,64,0.75);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#board {
+  margin: 0 auto 0 auto;
+  padding-top: 53px;
 }
 
 .asteroid {
