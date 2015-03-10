@@ -49,7 +49,6 @@ var init = function() {
   // update the board position after the piece snap 
   // for castling, en passant, pawn promotion
   var onSnapEnd = function() {
-    console.log(board);
     board.position(game.fen());
   };
 
@@ -59,6 +58,12 @@ var init = function() {
     var moveColor = 'White';
     if (game.turn() === 'b') {
       moveColor = 'Black';
+    }
+
+    if (moveColor === 'White') {
+      $('.message').empty().append("The World's turn");
+    } else {
+      $('.message').empty().append("Mark's turn");
     }
 
     // checkmate?
@@ -93,6 +98,7 @@ var init = function() {
     }); 
   };
 
+  updateStatus();
 
   var params = {
     draggable: true,
