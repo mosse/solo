@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <link rel='stylesheet' type='css' href='styles.css'>
+    <link rel="stylesheet" type="css" href="css/chessboard-0.3.0.css">
     <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
-      <div class="board shadow">
+      <div id="board" style="width: 560px">
       </div>
       <div class="scoreboard">
         <div class="high">High score: <span>0</span></div>
@@ -14,7 +16,8 @@
       </div>
     </div>
       <script src="d3.js" charset="utf-8"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script src='chessmeetsworld.js'></script>
-
+      <script src="js/chessboard-0.3.0.js"></script>
   </body>
 </html>

@@ -22,13 +22,13 @@ html {
   position: relative;
   height: 500px;
   width: 500px;
-  /*border: solid thin gray;*/
+  border: solid thin gray;
   /*padding: 25px;*/
   background-image: url('assets/board.svg');
   margin: 0 auto 0 auto;
 }
 
-.shadow {
+.board-b72b1 {
   -moz-box-shadow:    5px 5px 12px 0px #363737;
   -webkit-box-shadow: 5px 5px 12px 0px #363737;
   box-shadow:         5px 5px 12px 0px #363737;
