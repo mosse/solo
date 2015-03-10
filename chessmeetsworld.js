@@ -5,6 +5,7 @@ var init = function() {
     statusEl = $('#status'),
     fenEl = $('#fen'),
     pgnEl = $('#pgn');
+    myFirebaseRef = new Firebase('https://intense-fire-2841.firebaseio.com/');
 
   // do not pick up pieces if the game is over
   // only pick up pieces for the side to move
@@ -71,7 +72,17 @@ var init = function() {
   };
 
   var onChange = function(oldPos, newPos) {
-    console.log("Position changed: ", game.fen()) 
+    console.log("Position changed: ", game.fen());
+    myFirebaseRef.set({
+      title: "Hello World!",
+      fen: game.fen(),
+      author: "Firebase",
+      location: {
+        city: "San Francisco",
+        state: "California",
+        zip: 94103
+      }
+    }); 
   };
 
 
