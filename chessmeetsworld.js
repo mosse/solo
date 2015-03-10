@@ -1,15 +1,21 @@
 var init = function() {
 
   var board,
+    boardStatus,
     game = new Chess(),
     statusEl = $('#status'),
     fenEl = $('#fen'),
-    pgnEl = $('#pgn');
-    myFirebaseRef = new Firebase('https://intense-fire-2841.firebaseio.com/');
+    pgnEl = $('#pgn'),
+    myFirebaseRef = new Firebase('https://intense-fire-2841.firebaseio.com/'),
+    startPos;
 
   // check Firebase for previously stored board status
   myFirebaseRef.limitToLast(1).on("value", function(snapshot) {
-    console.log(snapshot.val());
+    startPos = (snapshot.val().fen);
+    game.load(startPos);
+    params.position = startPos;
+    board = new ChessBoard('board', params);
+    console.log(startPos);
   }, function (errorObject) {
     console.log("The read failed: " + errorObject.code);
   });
@@ -80,7 +86,7 @@ var init = function() {
 
   var onChange = function(oldPos, newPos) {
     console.log("Position changed: ", game.fen());
-    myFirebaseRef.push({
+    myFirebaseRef.update({
       fen: game.fen()
     }); 
   };
@@ -97,8 +103,6 @@ var init = function() {
     onSnapEnd: onSnapEnd
 
   }
-
-  var board = new ChessBoard('board', params);
 
 };
 
