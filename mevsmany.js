@@ -62,8 +62,10 @@ var init = function() {
 
     if (moveColor === 'White') {
       $('.message').empty().append("The World's turn");
+      $('.emailEntry').empty();
     } else {
       $('.message').empty().append("Mark's turn");
+      $('.emailEntry').empty().append("Sign up here to be notified when Mark takes his turn.");
     }
 
     // checkmate?

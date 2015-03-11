@@ -45,7 +45,14 @@ input {
 .message{
   text-align: center;
   font-size: 2.5em;
-  padding: 10px;
+  padding: 10px 10px 5px 10px;
+}
+
+.email{
+  padding-left: 20px;
+  font-size: 0.5em;
+  font-color: gray;
+
 }
 
 
